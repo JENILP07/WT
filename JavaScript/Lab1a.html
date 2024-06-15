@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <script>
+        a = prompt("Enter a Opertor");
+        n1 = parseInt(prompt("Enter Number 1"));
+        n2 = parseInt(prompt("Enter Number 2"));
+
+        if (a == '+') {
+            alert(n1 + n2);
+        }
+        else if (a == '-') {
+            alert(n1 - n2);
+        }
+        else if (a == '*') {
+            alert(n1 * n2);
+        }
+        else if (a == '/') {
+            if (n2 == 0) {
+                alert("Invalid");
+            } else {
+                alert(n1 / n2);
+            }
+        }
+    </script>
+</body>
+
+</html>

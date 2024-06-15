@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome</title>
+</head>
+
+<body>
+    <script>
+        a = parseInt(prompt("Enter a Number"));
+
+        // Conver The Number To String
+        b = a.toString();
+
+        // First split the string by each num in string then reverse it and then join the string again
+        c = b.split("").reverse().join("");
+
+        if (c == b) {
+            alert("The number is a palindrome");
+        }
+        else {
+            alert("The number is not a palindrome");
+        }
+
+    </script>
+</body>
+
+</html>

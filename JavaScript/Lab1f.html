@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Armstrong</title>
+</head>
+
+<body>
+    <script>
+        a = parseInt(prompt("Enter a Number"));
+        b = a.toString().split("");
+        count = b.length;
+        c = 0;
+        for (i = 0; i < b.length; i++) {
+            c = c + Math.pow(b[i], count);
+        }
+        if (c == a) {
+            document.write("The Number is Armstrong");
+        }
+        else {
+            document.write("The Number is not Armstrong");
+        }
+    </script>
+</body>
+
+</html>

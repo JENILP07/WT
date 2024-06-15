@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fibonacci</title>
+</head>
+
+<body>
+    <script>
+        first = 0;
+        second = 1;
+        a = parseInt(prompt("enter a Number"));
+        for (i = 0; i < a; i++) {
+            if (i <= 1) {
+                next = i;
+            } else {
+                next = first + second;
+                first = second;
+                second = next;
+            }
+            document.write(next + "</br>");
+        }
+    </script>
+</body>
+
+</html>

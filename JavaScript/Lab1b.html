@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Or Not</title>
+</head>
+
+<body>
+    <script>
+        num = parseInt(prompt("Enter a Number"));
+        temp = 0;
+        for (i = 2; i <= num / 2; i++) {
+            if (num % i == 0) {
+                temp = 1;
+            }
+        }
+        if (temp == 0) {
+            alert("Number is Prime");
+        } else {
+            alert("Number in Not Prime");
+        }
+
+    </script>
+</body>
+
+</html>
