@@ -1,0 +1,46 @@
+<!-- Write an HTML page with JavaScript that takes a number from popup box in the range 0-
+999 and display it in words. If the number is out of range, it should show “out of range” and
+if it is not a number ,it should show “not a number” message in the result box -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        a = parseInt(prompt("Enter a No"));
+
+        ones = ['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine',];
+        b = ['eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen', 'sixteen', 'seventeen', 'eighteen', 'nineteen'];
+        tens = ['','','ten', 'twenty', 'thirty', 'forty', 'fifty', 'sixty', 'seventy', 'eighty', 'ninty'];
+        hundreds = ['','hunderd'];
+
+        if (a < 0 || a > 999) {
+            alert("Out of range");
+        }
+        else if (a > 0 && a < 10) {
+            alert(ones[a - 1]);
+        }
+        else if (a >= 10 && a < 20) {
+            alert(b[a - 11]);
+        }
+        else if (a >= 20 && a < 100) {
+            alert(tens[Math.floor(a / 10) - 2] + ' ' + ones[a % 10 - 1]);
+        }
+        else if (a >= 100 && a < 1000) {
+            alert(hundreds[Math.floor(a / 100) - 1] + ' ' + tens[Math.floor(a / 10) % 10 - 2] + ' ' + ones[a % 10 - 1]);
+        }
+        else {
+                alert("not a number");
+            }
+
+        
+
+    </script>
+</body>
+
+</html>

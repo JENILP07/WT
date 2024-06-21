@@ -1,0 +1,32 @@
+<!-- WAP to read an array from the user and sort them in ascending order. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    var arr = new Array();
+    var i;
+    var n = parseInt(prompt("Enter the number of elements: "));
+
+    for (i = 0; i < n; i++) {
+        arr[i] = parseInt(prompt("Enter element " + (i + 1) + ": "));
+    }
+
+    for (i = 0; i < n; i++) {
+        for (var j = i + 1; j < n; j++) {
+            if (arr[i] > arr[j]) {
+                var temp = arr[i];
+                arr[i] = arr[j];
+                arr[j] = temp;
+            }
+        }
+    }
+
+    document.write("Sorted array: " + arr);
+</script>
+</body>
+</html>
