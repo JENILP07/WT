@@ -1,0 +1,31 @@
+<!-- WAP to display students stored in array. (A) -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>student in arr</title>
+</head>
+
+<body>
+    <script>
+        let students = [
+            { name: "Rahul", roll: 1, marks: 80, spi: [8, 4, 6] },
+            { name: "Rohan", roll: 2, marks: 90, spi: [5, 5, 5] },
+            { name: "Raj", roll: 3, marks: 70, spi: [10, 10, 9] },
+            { name: "Ramesh", roll: 4, marks: 85, spi: [8, 5, 9] },
+        ]
+        for (let i = 0; i < students.length; i++) {
+            document.write(students[i].name + "\n");
+            document.write(students[i].roll + "\n");
+            document.write(students[i].marks + "\n");
+            document.write("SPI: " + students[i].spi + "\n");
+            document.write("<br>");
+            document.write("</br>");
+            document.write("</br>");
+        }
+    </script>
+</body>
+
+</html>
