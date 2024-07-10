@@ -1,0 +1,48 @@
+<!-- WAP to recognize which mouse event is ƒired. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mouse event</title>
+</head>
+
+<body>
+    <button onclick="a()">On Click</button>
+    <button ondblclick="b()">On DobleClick</button>
+    <button onmousedown="c()">On Mouse Down</button>
+    <button onmouseup="d()">On Mouse Up</button>
+    <button onmouseout="e()">On Mouse Out</button>
+    <button onmousemove="f()">On Mouse Move</button>
+    <button onmouseover="g()">On Mouse Over</button>
+    <button oncontextmenu="h()">On RightClick</button>
+    <script>
+        a = () => {
+            alert("You clicked the button ON CLICK");
+        }
+        b = () => {
+            alert("You clicked the button ON DBLCLICK");
+        }
+        c = () => {
+            alert("You clicked the button ON Mouse Down");
+        }
+        d = () => {
+            alert("You clicked the button ON Mouse up");
+        }
+        e = () => {
+            alert("You clicked the button ON Mouse Out");
+        }
+        f = () => {
+            alert("You clicked the button ON Mouse Move");
+        }
+        g = () => {
+            alert("You clicked the button ON Mouse Over");
+        }
+        h = () => {
+            alert("You clicked the button ON Right Click");
+        }
+    </script>
+</body>
+
+</html>

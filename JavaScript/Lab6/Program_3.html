@@ -1,0 +1,28 @@
+<!-- WAP to demonstrate change in properties of HTML element using JavaScript -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="heading">Heading</h1>
+    <p id="para">This is a paragraph</p>
+    <button id="btn">Click Me</button>
+    <script>
+        document.getElementById("btn").addEventListener("click", change);
+        function change() {
+            document.getElementById("heading").style.fontSize = "100px";
+            document.getElementById("heading").style.color = "red";
+            document.getElementById("heading").style.fontStyle = "bold";
+            document.getElementById("para").style.color = "blue";
+            document.getElementById("para").style.fontStyle = "italic";
+            document.getElementById("para").style.fontSize = "50px";
+        }
+    </script>
+</body>
+
+</html>

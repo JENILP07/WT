@@ -1,0 +1,61 @@
+<!-- Write a JavaScript that handles following mouse events. Add necessary elements. (B)
+If the mouse is over the heading should turn yellow and if the mouse goes out of the
+heading it should turn black.
+If ƒndtime button is clicked show time and date information.
+If button named “red” is clicked, background should change to red and If button named
+“green” is clicked, background should
+change to green. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #head {
+            font-size: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <span id="head">Heading</span>
+    <br>
+    <button id="btn">Find Time</button>
+    <span id="msg"></span>
+    <br>
+    <button id="btn2">red</button>
+    <br>
+    <button id="btn3">green</button>
+    <script>
+        document.getElementById("head").addEventListener("mouseover", change);
+        document.getElementById("head").addEventListener("mouseout", change1);
+        document.getElementById("btn2").addEventListener("click", change3);
+        document.getElementById("btn3").addEventListener("click", change4)
+
+        function change() {
+            document.getElementById("head").style.color = "yellow";
+        }
+
+        function change1() {
+            document.getElementById("head").style.color = "black";
+        }
+
+
+        document.getElementById("btn").addEventListener("click", change2);
+        function change2() {
+            a = document.getElementById("msg").innerHTML = Date();
+        }
+
+        function change3() {
+            document.body.style.backgroundColor = "red";
+        }
+        function change4() {
+            document.body.style.backgroundColor = "green";
+        }
+
+    </script>
+</body>
+
+</html>
