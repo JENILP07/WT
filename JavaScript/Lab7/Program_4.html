@@ -1,0 +1,27 @@
+<!-- Demonstrate the spread operator -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spread Operator</title>
+</head>
+
+<body>
+    <script>
+        student_1 = {
+            name: "John",
+            age: 20,
+            enroll: 36354
+        }
+        student_2 = {
+            name: "Jane",
+            email: "xyz@darshan.ac.in"
+        }
+        student = { ...student_1, ...student_2 }
+        console.log(student);
+    </script>
+</body>
+
+</html>
