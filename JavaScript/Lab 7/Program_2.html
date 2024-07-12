@@ -1,0 +1,27 @@
+<!-- Demonstrate the difference between let and var. (A) -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let and Var</title>
+</head>
+
+<body>
+    <script>
+        function abs() {
+            var x = 5;
+            console.log(x);
+            if (true) {
+                let x = 10;
+                console.log(x);
+            }
+            console.log(x);
+
+        }
+        abs();  
+    </script>
+</body>
+
+</html>
